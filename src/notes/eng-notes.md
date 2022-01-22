@@ -12,7 +12,7 @@
 ### cadence stuff:
 - transaction to access topshot
 - create contract for minting resource
-- create contract for minting player card
+- create contract for minting player card? do we even mint a card?i want this token to have 0 value and be tied to the topshot. is that possible? want a lot of meta data. how much metadata is too much?
 
 ### regular fullstack stuff
 - generate league/league db structure
@@ -36,3 +36,5 @@ link: https://blog.nbatopshot.com/posts/nba-top-shot-rarity-blog
 - metadata of topshot will determine scoring bonuses
 - rarity of topshot gives you % chance of getting one of 4 tiered player card
 - player cards tier range from total bonus from 0%, 50%, 75%, 100%
+- can create player cards of NON-FANTASY-VIABLE-PLAYERS. put a lot of guardrails around this to prevent accidental player card minting
+- what are best practices??? where to find them
