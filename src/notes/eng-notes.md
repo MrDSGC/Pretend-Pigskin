@@ -25,6 +25,14 @@
 - non-fungible lifetime player stats
 - player fantasy league history
 - user fantasy league history
+- player card market, searchable by stats/bonuses
 
 # the bible
 https://github.com/onflow/kitty-items
+
+### topshot balancing
+![image](https://user-images.githubusercontent.com/23225108/150630916-06a00c63-965c-420f-8ba2-bfedb861296c.png)
+link: https://blog.nbatopshot.com/posts/nba-top-shot-rarity-blog
+- metadata of topshot will determine scoring bonuses
+- rarity of topshot gives you % chance of getting one of 4 tiered player card
+- player cards tier range from total bonus from 0%, 50%, 75%, 100%
