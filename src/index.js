@@ -1,13 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import PigSkin from './front_end/pigskin';
+import { BrowserRouter } from 'react-router-dom';
+import PigSkin from './components/pigskin';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <PigSkin />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <PigSkin/>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
