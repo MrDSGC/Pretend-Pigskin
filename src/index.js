@@ -1,11 +1,18 @@
+/**
+ * Index.js
+ *
+ * authored by Daniel Cheng dcheng47@gmail.com
+ */
+
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import PigSkin from './components/pigskin';
+import PP from './components/pp';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-    <PigSkin/>
+    <PP/>
   </BrowserRouter>,
   document.getElementById('root')
 );
