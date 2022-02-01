@@ -12,7 +12,8 @@ export default function PPWelcome() {
   return (
     <Card sx={{
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      maxWidth: '100%'
     }}>
       <CardHeader>WELCOME</CardHeader>
       <h1>WELCOME PAGE</h1>

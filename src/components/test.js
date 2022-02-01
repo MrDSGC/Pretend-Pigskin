@@ -6,6 +6,8 @@
 
 import {doTheThing} from '../cadence/scripts/exampleScript';
 import {doTheOtherThing} from '../cadence/transactions/exampleTransaction';
+import * as fcl from "@onflow/fcl";
+import * as types from "@onflow/types";
 import {useState} from 'react';
 
 fcl.config()
