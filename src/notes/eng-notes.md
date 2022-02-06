@@ -11,6 +11,10 @@ SHOOTERS SHOOT
 
 
 ## MVP
+- accounts can mint player card with topshot metadata
+- accounts can create a weekly lineup with  playercard tokens
+- account lineups are ranked by player performance
+
 
 ### cadence stuff:
 - transaction to access topshot
@@ -31,7 +35,9 @@ SHOOTERS SHOOT
 - player card market, searchable by stats/bonuses
 
 # the bible
-https://github.com/onflow/kitty-items
+kitty items: https://github.com/onflow/kitty-items
+
+dapper nba smart contracts: https://github.com/dapperlabs/nba-smart-contracts
 
 ### topshot balancing
 ![image](https://user-images.githubusercontent.com/23225108/150630916-06a00c63-965c-420f-8ba2-bfedb861296c.png)
@@ -40,4 +46,8 @@ link: https://blog.nbatopshot.com/posts/nba-top-shot-rarity-blog
 - rarity of topshot gives you % chance of getting one of 4 tiered player card
 - player cards tier range from total bonus from 0%, 50%, 75%, 100%
 - can create player cards of NON-FANTASY-VIABLE-PLAYERS. put a lot of guardrails around this to prevent accidental player card minting
-- what are best practices??? where to find them
+- what are game design best practices??? where to find them
+- multiple topshots able to affect 1  playercard?
+- re-rerolling stats mechanic?
+- recycling playercards with poor stats?
+- playrs on a winning squads earn rerolls? (weekly? seasonal?) earn bonus stats? tenured player  cards > fresh?

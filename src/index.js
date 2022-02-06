@@ -6,13 +6,13 @@
 
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import PP from './components/pp';
+import TSY from './components/tsy';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-    <PP/>
+    <TSY/>
   </BrowserRouter>,
   document.getElementById('root')
 );

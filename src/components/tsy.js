@@ -6,12 +6,13 @@
 import { Routes, Route } from 'react-router-dom';
 import { useState, useLayoutEffect } from 'react';
 import Box from '@mui/material/Box';
-import PsSideBar from './appBar/ppSideBar';
-import Welcome from './welcome/ppWelcome';
+import TSYSideBar from './appBar/tsySideBar';
+import Welcome from './main/tsyWelcome';
 import TopShotPOC from './dev/topshotPOC';
-import Account from './account/ppAccount';
+import Account from './account/tsyAccount';
+import Home from './main/tsyHome';
 
-function Pigskin() {
+function TSY() {
 
   const useWindowSize = () => {
     const [size, setSize] = useState([0, 0]);
@@ -36,17 +37,18 @@ function Pigskin() {
       width: width
       }}
     >
-      <PsSideBar
+      <TSYSideBar
         user={user}
         setUser={setUser}
       />
       <Routes>
         <Route path="/" element={<Welcome/>} />
-        <Route path="/dev" element={<TopShotPOC/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/account" element={<Account user={user}/>} />
+        <Route path="/dev" element={<TopShotPOC/>} />
       </Routes>
     </Box>
   )
 }
 
-export default Pigskin;
+export default TSY;

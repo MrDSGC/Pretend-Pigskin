@@ -4,8 +4,8 @@
  * authored by Daniel Cheng dcheng47@gmail.com
  */
 
-import {doTheThing} from '../cadence/scripts/exampleScript';
-import {doTheOtherThing} from '../cadence/transactions/exampleTransaction';
+import {doTheThing} from '../../cadence/scripts/exampleScript';
+import {doTheOtherThing} from '../../cadence/transactions/exampleTransaction';
 import * as fcl from "@onflow/fcl";
 import * as types from "@onflow/types";
 import {useState} from 'react';

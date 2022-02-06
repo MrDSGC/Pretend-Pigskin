@@ -15,7 +15,7 @@ import {
   List,
 } from '@mui/material'
 import { useState } from 'react'
-import { fetchAllTopshots } from '../../cadence/scripts/tsMomentScript'
+import { fetchAllPlays } from '../../cadence/scripts/tsMomentScript'
 import * as fcl from '@onflow/fcl'
 
 fcl
@@ -41,7 +41,7 @@ export default function TopShotPOC() {
 
   const fetchPlaysByKey = async () => {
     const result = await fcl
-      .send([fcl.script(fetchAllTopshots)])
+      .send([fcl.script(fetchAllPlays)])
       .then(fcl.decode);
 
     setPlay(result[playKey])
