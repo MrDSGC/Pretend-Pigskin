@@ -14,3 +14,4 @@
 - TOPSHOT SQUAD COLLECTION
 - TOPSHOT MANGER PROFILE NFT
 - topshot Weekly rankings contract
+- create script to read current funds from auth account in cadence
