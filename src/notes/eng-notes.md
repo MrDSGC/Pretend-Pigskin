@@ -1,13 +1,11 @@
 # Engineering Notes
 
-TOPSHOT SHOOTERS
-SHOOTERS SHOOT
+TOPSHOT Y
 
 #### nba apis
-- end of day stat update scoreboard: http://data.nba.net/10s/prod/v1/20170218/scoreboard.json
 - player profiles :http://data.nba.net/10s/prod/v1/2016/players.json
 - daily update for all files: http://data.nba.net/10s/prod/v1/today.json
-- live box-score: api-football.com/documentation-v3
+- live box-score: https://developer.sportradar.com/io-docs
 
 
 ## MVP

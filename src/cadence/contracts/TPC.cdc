@@ -1,3 +1,5 @@
+import NonFungibleToken from 0xNFTADDRESS
+
 pub contract TPC {
     init() {
       self.totalSupply = 0
@@ -46,7 +48,9 @@ pub contract TPC {
     pub resource interface Receiver {
         // deposit takes an NFT as an argument and adds it to the Collection
         //
-        pub fun deposit(token: @NFT)
+        pub fun deposit(token: @NFT) {
+
+        }
     }
     pub resource Collection: Provider, Receiver, CollectionPublic {
 
@@ -76,8 +80,7 @@ pub contract TPC {
         }
 
         pub fun borrowNFT(id: UInt64): &NFT {
-
-          return <- token
+            return &self.ownedNFTs[id] as &NonFungibleToken.NFT
         }
 
     }

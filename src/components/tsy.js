@@ -4,49 +4,70 @@
  * authored by Daniel Cheng dcheng47@gmail.com
  */
 import { Routes, Route } from 'react-router-dom';
-import { useState, useLayoutEffect } from 'react';
 import Box from '@mui/material/Box';
-import TSYSideBar from './appBar/tsySideBar';
-import Welcome from './main/tsyWelcome';
-import TopShotPOC from './dev/topshotPOC';
-import Account from './account/tsyAccount';
-import Home from './main/tsyHome';
+import { useState } from 'react';
+import TSYSideBar from './appBar/sideBar';
+import WelcomePage from './main/welcomePage';
+import SettingsPage from './settings/settingsPage';
+import RankingsPage from './rank/rankingPage';
+import HomePage from './main/homePage';
+import MintyPage from './minty/mintyPage'
+import PlayersPage from './players/playersPage'
+
 
 function TSY() {
-
-  const useWindowSize = () => {
-    const [size, setSize] = useState([0, 0]);
-    useLayoutEffect(() => {
-      function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
-      }
-      window.addEventListener('resize', updateSize);
-      updateSize();
-      return () => window.removeEventListener('resize', updateSize);
-    }, []);
-    return size;
-  }
-
-  const [user, setUser] = useState();
-  const [width, height] = useWindowSize();
+  const [user, setUser] = useState(null);
+  const [isLoading, setLoading] = useState(false);
 
   return (
-    <Box sx={{
+    <Box
+    sx={{
       display: 'flex',
-      flexDirection: 'row',
-      width: width
+      flexDirection: 'column',
+      width: '100%',
+      height: '100%',
       }}
     >
-      <TSYSideBar
-        user={user}
-        setUser={setUser}
-      />
-      <Routes>
-        <Route path="/" element={<Welcome/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/account" element={<Account user={user}/>} />
-        <Route path="/dev" element={<TopShotPOC/>} />
-      </Routes>
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        width: '100%',
+        height: '100%',
+        }}
+      >
+        <TSYSideBar
+          user={user}
+          setUser={setUser}
+          setLoading={setLoading}
+        />
+        <Routes>
+          <Route
+            path="/"
+            element={<WelcomePage isLoading={isLoading}/>}
+          />
+          <Route
+            path="/home"
+            element={<HomePage user={user} />}
+
+          />
+          <Route
+            path="/mint"
+            element={<MintyPage/>}
+          />
+          <Route
+            path="/rank"
+            element={<RankingsPage/>}
+          />
+          <Route
+            path="/players"
+            element={<PlayersPage/>}
+          />
+          <Route
+            path="/settings" element={<SettingsPage user={user} />}
+
+          />
+        </Routes>
+      </Box>
     </Box>
   )
 }

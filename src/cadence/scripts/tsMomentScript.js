@@ -9,7 +9,7 @@
  *
  */
  export const fetchAllPlays = `
- import TopShot from 0x877931736ee77cff
+ import TopShot from 0x0b2a3299cc857e29
 
  // This script returns an array of all the plays
  // that have ever been created for Top Shot

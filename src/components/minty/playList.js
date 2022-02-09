@@ -1,7 +1,7 @@
 /**
- * play list component for User
+ * NBA Topshot list component for Minter PAge
  *
- * List of topshot plays read from Account collection
+ * List of topshot plays read from Account Collection
  *
  * authored by Daniel Cheng dcheng47@gmail.com
  */
